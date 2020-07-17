@@ -22,6 +22,8 @@ import Details from '@/components/Bargains/details'
 
 //分类商品
 import Catgiv from '@/components/catgiv/catgiv'
+//模糊搜索+历史记录
+import Scarch from '@/components/catgiv/scarch'
 Vue.use(Router)
 
 export default new Router({
@@ -95,6 +97,14 @@ export default new Router({
       component: Catgiv,
       meta: {
         title: "分类商品"
+    }
+    },
+    {
+      path: '/scarch',
+      name: 'scarch',
+      component: Scarch,
+      meta: {
+        title: "模糊搜索"
     }
     },
   ]

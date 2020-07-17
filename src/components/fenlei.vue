@@ -2,7 +2,7 @@
   <div>
     <div class="top">
       <div>
-        <van-search placeholder="请输入搜索关键词" input-align="center" />
+        <van-search placeholder="请输入搜索关键词" input-align="center" @focus="go" />
       </div>
     </div>
     <div>
@@ -54,6 +54,8 @@ export default {
   },
   mounted() {
     this.goods();
+    // this.goback();
+    
   },
 
   components: {},
@@ -73,6 +75,9 @@ export default {
             }
           });
         });
+    },
+    go(){
+      this.$router.push("/scarch")
     }
   }
 };
