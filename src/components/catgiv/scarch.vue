@@ -47,6 +47,17 @@ export default {
           console.log(res);
           this.list = res.data.data;
         });
+    },
+
+    //获取历史记录
+    getHistory(){
+
+    },
+    setHistory(){
+
+    },
+    removeHistory(){
+
     }
   }
 };
